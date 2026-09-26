@@ -29,7 +29,9 @@ function seleccionarPersonaje(nombre, rutaImagen, descripcion) {
 // EQUIPO 2: FUNCIONES DE ESTUDIANTES (FEATURES)
 // ==========================================================
 
-// TAREA 2E: Función básica para mostrar información de contacto
+// TAREA 2E: Mostrar u ocultar la información de contacto en la tarjeta
+
 function mostrarContacto(nombreEstudiante, correo) {
     alert("Contacto de " + nombreEstudiante + ":\nCorreo: " + correo);
 }
+
