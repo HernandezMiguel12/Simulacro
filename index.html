@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma Cedenorte - Personajes y Creadores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Plataforma Cedenorte 2026</h1>
+        <p>Galería interactiva de personajes y directorio de estudiantes</p>
+    </header>
+
+    <main class="main-container">
+
+        <!-- ========================================================== -->
+        <!-- SECCIÓN 1: PERSONAJES (ÁREA DE TRABAJO EQUIPO 1 - HOTFIX) -->
+        <!-- ========================================================== -->
+        <section class="seccion-personajes">
+            <h2>Galería de Personajes</h2>
+            
+            <div class="visor-principal">
+                <!-- ERROR A1: Faltan IDs id="img-principal" e id="titulo-principal" -->
+                <img src="img/personaje1.png" alt="Personaje Seleccionado" class="img-destacada">
+                <h3>Selecciona un personaje</h3>
+                <p id="descripcion-principal">Haz clic en una de las tarjetas de abajo para ver sus detalles.</p>
+            </div>
+
+            <div class="grid-personajes">
+                <!-- ERROR A2: Las rutas dicen 'img/' en vez de 'assets/img/' -->
+                <div class="tarjeta-personaje" onclick="seleccionarPersonaje('Bellota', 'assets/img/personaje1.png', 'Luchadora y con gran carácter.')">
+                    <img src="img/personaje1.png" alt="Bellota">
+                    <h4>Bellota</h4>
+                </div>
+
+                <div class="tarjeta-personaje" onclick="seleccionarPersonaje('Bombón', 'assets/img/personaje2.png', 'Líder del grupo, inteligente y organizada.')">
+                    <img src="img/personaje2.png" alt="Bombón">
+                    <h4>Bombón</h4>
+                </div>
+
+                <div class="tarjeta-personaje" onclick="seleccionarPersonaje('Burbuja', 'assets/img/personaje3.png', 'Dulce, sensible y amante de los animales.')">
+                    <img src="img/personaje3.png" alt="Burbuja">
+                    <h4>Burbuja</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================== -->
+        <!-- SECCIÓN 2: ESTUDIANTES (ÁREA DE TRABAJO EQUIPO 2 - FEATURES) -->
+        <!-- ========================================================== -->
+        <section class="seccion-estudiantes">
+            <h2>Directorio de Estudiantes</h2>
+            <p>Conoce al equipo de desarrollo que hace parte de este proyecto.</p>
+
+            <div class="grid-estudiantes" id="contenedor-estudiantes">
+
+                <!-- PLANTILLA BASE DE EJEMPLO -->
+                <div class="tarjeta-estudiante">
+                    <img src="assets/img/avatar-placeholder.png" alt="Foto Estudiante" class="foto-perfil">
+                    <h3>Estudiante Modelo</h3>
+                    <p class="rol">Desarrollador Web</p>
+                    <p class="bio">Apasionado por la tecnología y la programación lógica.</p>
+                    <button class="btn-contacto" onclick="mostrarContacto('Modelo', 'modelo@cedenorte.edu.co')">Ver Contacto</button>
+                </div>
+
+                <!-- INTEGRANTE 2B: Duplica este bloque y pon tus datos -->
+                <!-- INTEGRANTE 2C: Duplica este bloque y pon tus datos + hobbies -->
+                <!-- INTEGRANTE 2D: Duplica este bloque y pon tus datos + botón like -->
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Cedenorte - Proyecto Colaborativo de Git & GitHub</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+/* ==========================================================
+   ESTILOS GENERALES
+   ========================================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #1a252f;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.main-container {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8rem; /* ¡ERROR D1: Debería ser 0.8rem u 8px, esto deforma las secciones! */
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+/* ==========================================================
+   EQUIPO 1: ESTILOS DE GALERÍA DE PERSONAJES
+   ========================================================== */
+.visor-principal {
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.img-destacada {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #3498db;
+    margin-bottom: 1rem;
+}
+
+/* ERROR D2: La clase en HTML es .grid-personajes pero aquí escribieron .grid_personajes */
+.grid_personajes {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.tarjeta-personaje {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.tarjeta-personaje:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta-personaje img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+/* ==========================================================
+   EQUIPO 2: TAREA 2A (Cambiar colores globales y estilizar botones)
+   ========================================================== */
+.grid-estudiantes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.tarjeta-estudiante {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+.foto-perfil {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+/* TAREA 2A: Integrante 2A debe cambiar estos estilos básicos por unos más llamativos */
+.btn-contacto {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 0.8rem;
+}
+
+.btn-contacto:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #1a252f;
+    color: #fff;
+}
